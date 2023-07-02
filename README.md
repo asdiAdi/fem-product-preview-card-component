@@ -4,11 +4,11 @@ This is a solution to the [Product preview card component challenge on Frontend 
 
 - Mobile View
 
-  ![Mobile View](./images/image-product-mobile.jpg)
+  ![Mobile View](./images/mobile-design.jpg)
 
 - Desktop View
 
-  ![Desktop View](./images/image-product-desktop.jpg)
+  ![Desktop View](./images/desktop-design.jpg)
 
 ### Links
 
