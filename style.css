@@ -15,8 +15,8 @@
 }
 
 body {
-  margin-top: 1.5rem;
   width: 100vw;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,7 +24,6 @@ body {
 }
 
 .card {
-  margin-top: calc(10.875rem + 1px);
   width: 343px;
   height: 611px;
   border-radius: 0.625rem;
@@ -98,7 +97,7 @@ body {
   background-color: var(--deep-aquamarine-hover);
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1440px) {
   .card {
     width: 600px;
     height: 450px;
