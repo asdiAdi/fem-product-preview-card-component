@@ -17,10 +17,10 @@
 body {
   margin-top: 1.5rem;
   width: 100vw;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   background-color: var(--cream);
 }
 
@@ -96,10 +96,6 @@ body {
 }
 .card__info__button:active {
   background-color: var(--deep-aquamarine-hover);
-}
-
-.attribution {
-  margin-top: 3rem;
 }
 
 @media only screen and (min-width: 1000px) {
