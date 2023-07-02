@@ -1,0 +1,129 @@
+:root {
+  /*colors*/
+  --pure-white: #ffffff;
+  --cream: #f2eae2;
+  --aurometal-saurus: #6c7289;
+  --deep-aquamarine: #3d8168;
+  --deep-aquamarine-hover: #1a4032;
+  --gunmetal: #1c232b;
+
+  /*fonts*/
+  --font-overline: 500 0.75rem Montserrat, sans-serif;
+  --font-display: 700 2rem/2rem Fraunces, sans-serif;
+  --font-body: 500 0.875rem / calc(1.375rem + 1px) Montserrat, sans-serif;
+  --font-button-text: 700 0.875rem Montserrat, sans-serif;
+}
+
+body {
+  margin-top: 1.5rem;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--cream);
+}
+
+.card {
+  width: 343px;
+  height: 611px;
+  border-radius: 0.625rem;
+  overflow: hidden;
+  background-color: var(--pure-white);
+}
+
+.card__picture {
+  width: 100%;
+  display: block;
+}
+
+.card__info {
+  padding: 1.5rem;
+}
+
+.card__info__category {
+  margin: 0;
+  color: var(--aurometal-saurus);
+  font: var(--font-overline);
+  letter-spacing: calc(0.25rem + 1px);
+}
+
+.card__info__title {
+  margin: 0.75rem 0 0 0;
+  color: var(--gunmetal);
+  font: var(--font-display);
+}
+
+.card__info__description {
+  margin: 1rem 0 0 0;
+  color: var(--aurometal-saurus);
+  font: var(--font-body);
+}
+
+.card__info__price {
+  margin-top: 1.5rem;
+  width: 12.125rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card__info__price__current {
+  color: var(--deep-aquamarine);
+  font: var(--font-display);
+}
+
+.card__info__price__before {
+  color: var(--aurometal-saurus);
+  font: 500 calc(0.75rem + 1px) / calc(1.375rem + 1px) Montserrat, sans-serif;
+  text-decoration: line-through;
+}
+
+.card__info__button {
+  all: unset;
+  margin-top: 1.25rem;
+  width: 100%;
+  height: 3rem;
+  background-color: var(--deep-aquamarine);
+  color: var(--pure-white);
+  font: var(--font-button-text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.card__info__button:active {
+  background-color: var(--deep-aquamarine-hover);
+}
+
+.attribution {
+  margin-top: 3rem;
+}
+
+@media only screen and (min-width: 1000px) {
+  .card {
+    width: 600px;
+    height: 450px;
+    display: flex;
+  }
+  .card__picture {
+    width: 300px;
+  }
+  .card__info {
+    padding: 2rem;
+  }
+  .card__info__title {
+    margin-top: 1.25rem;
+  }
+  .card__info__description {
+    margin-top: 1.5rem;
+  }
+  .card__info__price {
+    margin-top: calc(1.5rem + 5px);
+  }
+  .card__info__button {
+    margin-top: 1.875rem;
+  }
+}
